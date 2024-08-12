@@ -1,0 +1,368 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#recipe-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recipe-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recipe-card:hover {
+  background-color: #e0e0e0;
+}
+
+.recipe-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.recipe-card h3 {
+  margin: 0;
+}
+
+.recipe-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+#recipe-details {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button.liked {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+button.liked:hover {
+  background-color: #45a049;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.alert {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.alert.success {
+  background-color: #4CAF50;
+}
+
+.alert.error {
+  background-color: #f44336;
+}
+
+#filter {
+  margin-bottom: 20px;
+}
+
+#filter button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#filter button.active {
+  background-color: #45a049;
+}
+
+#filter label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+
+.like-button {
+  display: flex;
+  align-items: center;
+  background-color: #ccc; /* Default grey color */
+  color: #333; /* Default grey icon color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.like-button i {
+  margin: 0; /* No margin needed */
+}
+
+.like-button.default {
+  background-color: #ccc; /* Grey background when not liked */
+  color: #333; /* Grey icon color when not liked */
+}
+
+.like-button.liked {
+  background-color: #4CAF50; /* Green background when liked */
+  color: #fff; /* White icon color when liked */
+}
+
+.like-button:hover {
+  background-color: #bbb; /* Slightly darker grey on hover if not liked */
+}
+
+.like-button.liked:hover {
+  background-color: #45a049; /* Darker green on hover if liked */
+}
+a {
+  color: inherit; /* Use the text color of the parent element */
+  text-decoration: none; /* Remove underline */
+}
+
+a:visited {
+  color: inherit; /* Ensure visited links also follow the same color */
+}
+
+a:hover,
+a:focus {
+  text-decoration: none; /* Keep underline removed on hover/focus */
+  color: inherit; /* Keep color consistent on hover/focus */
+}
+
+
+.recipe {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.ingredients,
+.instructions {
+  padding: 0;
+  margin: 0;
+}
+
+.ingredients li,
+.instructions p {
+  margin-bottom: 10px; /* Spacing between items */
+  line-height: 1.5; /* Improve readability */
+}
+
+.instructions {
+  margin-top: 10px;
+}
+
+#all {
+  width: 50%;
+}
+#liked {
+  width: 20%;
+}
+
+#notLiked {
+  width: 20%;
+}.back-button {
+  background-color: transparent;
+  border: none;
+  color: #4CAF50;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 10px 0;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: transparent;
+
+  color: #93d695;
+}
+
+.back-button i {
+  /* vertical-align: middle; */
+   /* Center the icon vertically */
+}
+
+
+/* Add this to your App.css or relevant CSS file */
+/* Add this to your App.css or relevant CSS file */
+.add-recipe-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #28a745; /* Match app color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 30%;
+}
+
+.add-recipe-button:hover {
+  background-color: #218838; /* Darker shade on hover */
+}
+
+
+
+
+.submitBtn {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  /* If you need to center items vertically as well, add align-items: center; */
+}
+
+.add {
+  width: 20%;
+}
+
+.quan {
+  width: 3%;
+}
+
+.filter {
+
+ 
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white; /* Match app color */
+  color: #28a745;
+  border: none;
+  width: 10%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 30%;
+}
+
+#pel {
+  color: #28a745;
+  margin: 13px;
+}
+
+.comment-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}
+
+.comment {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.delete-comment-button {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.delete-comment-button i {
+  font-size: 16px;
+}
